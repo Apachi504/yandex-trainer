@@ -1,0 +1,13 @@
+import React from 'react';
+import { Tabs } from './tabs.jsx';
+import { ProductsContainer } from './products-container.jsx';
+
+
+export const Cart = ({discount, totalPrice,setTotalPrice,setDiscount}) => {
+  return (
+    <section>
+      <Tabs />
+      <ProductsContainer discount={discount} totalPrice={totalPrice} setTotalPrice={setTotalPrice} setDiscount={setDiscount}/>
+    </section>
+  );
+};
